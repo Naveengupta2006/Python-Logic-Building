@@ -8,7 +8,7 @@ def count_even_odd(numbers):
         else:
             odd += 1
 
-    print("Even number is : ")
+    print("Even number is : ", even)
     print("odd number is :", odd)
 
 

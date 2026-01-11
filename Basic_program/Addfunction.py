@@ -1,9 +1,8 @@
-def sum2_add(num1,num2):
+def sum_2(num1, num2):
     sum = num1 + num2
     return sum
 
-
-print(sum2_add(5,6))
+print(sum_2(5,6))
 
 
 
