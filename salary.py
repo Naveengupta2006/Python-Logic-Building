@@ -3,14 +3,13 @@
 
 salaries = [30000, 45000, 50000, 60000, 35000]
 
-# calculate Average salary
+# calculate average salary
 avg_salaries = sum(salaries) / len(salaries)
 
-# find above salary
+# calculate above salary
 above_salary = []
 for s in salaries:
     if s > avg_salaries:
         above_salary.append(s)
-
-print('Average Salary: ', avg_salaries)
-print('Above Salary: ', above_salary)        
+print('Average Salary', avg_salaries)
+print('Above Salary: ', above_salary)
