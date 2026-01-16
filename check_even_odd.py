@@ -10,4 +10,4 @@ for num in lst:
         odd.append(num)
 
 print('Even is:', even)
-print('odd is:', odd)            
+print('odd is:', odd)
