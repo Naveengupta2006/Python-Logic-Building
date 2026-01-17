@@ -6,4 +6,4 @@ for i in range(len(nums)):
         if nums[i] == nums[j]:
             if nums[i] not in duplicates:
                 duplicates.append(nums[i])
-print(duplicates)                
+print(duplicates)               
