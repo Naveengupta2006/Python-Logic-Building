@@ -1,10 +1,6 @@
-def count_vowels(text):
-    vowels = 'aeiouAEIOU'
-    count = 0
-    for ch in text:
-        if ch in vowels:
-            count += 1
-    return count
+ch = input('Enter a vowels:').lower()
 
-print(count_vowels('Hello World'))
-print(count_vowels('PYTHON'))        
+if ch in 'aeiou':
+    print('vowels')
+else:
+    print('constent')    
