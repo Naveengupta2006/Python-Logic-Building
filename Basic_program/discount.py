@@ -1,3 +1,11 @@
+'''Shop discount:
+
+Amount ≥5000 → 20%
+
+Amount ≥3000 → 10%
+
+Else → No discount'''
+
 amount = int(input('Enter a number: '))
 
 if amount >= 5000:
