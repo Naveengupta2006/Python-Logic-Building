@@ -1,22 +1,20 @@
-num = int(input('enter a decimal number'))
+num = int(input('enter a number'))
 
 original = num
 remainders = []
 
 if num == 0:
-    print('Binary')
+    print('binary')
 else:
     while num > 0:
         remainder = num % 2
         remainders.append(remainder)
         num = num // 2
 
-    remainders.reverse()
+        remainders.reverse()
 
     binary = "".join(map(str, remainders))
 
+
 print('original', original)
-print('binary', binary)        
-
-
-
+print('binary', binary)            
