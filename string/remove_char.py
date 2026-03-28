@@ -1,12 +1,12 @@
 # Removal of all characters from a string except integers
 
-str1 = input('enter a str: ')
+str1 = input('enter a string: ')
 
 result = ""
 
-for c in str1:
-    if c.isdigit():
-        result += c
+for s in str1:
+    if s.isdigit():
+        result += s
 
-print("Original String",str1)
-print('Result', result)        
+print("original Result:", s)
+print("Result:", result)        
