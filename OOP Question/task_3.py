@@ -25,7 +25,7 @@ Enter 0, if you want to play again: 1
 
 '''
 
-import random
+import random   # generate the random number
 
 class flashcard:
     def __init__(self):
