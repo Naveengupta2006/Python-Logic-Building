@@ -30,6 +30,7 @@ class Atm:
             pass
         elif user_input == '4':
             # withdraw
+            self.withdraw()
             pass
         else:
             exit()
@@ -61,8 +62,20 @@ class Atm:
         if user_pin == self.pin:
             print('Your balance is', self.balance)
         else:
-            print('get lost')    
+            print('get lost')
 
-
+    def withdraw(self):
+        user_pin = input('enter the pin')
+        if user_pin == self.pin:
+            # allow to withdraw money
+            amount = int(input('enter the amount'))
+            if amount <= self.balance:
+                self.balance = self.balance - amount
+                print('withdrawl successfully.balance is', self.balance)
+            else:
+                print('abe garib')    
+        else:
+            print('sale chor')  
+        self.menu()
 
 obj = Atm() # create the object  
