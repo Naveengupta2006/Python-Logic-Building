@@ -30,12 +30,12 @@ class bankaccount:
         self.name = name
         self.balance = balance
 
-    def deposit(self, amount):
+    def deposit(self, amount): # deposit the amount
         self.balance += amount
         print(f"deposit is {amount} successfully")
 
     def withdrawal(self, amount):
-        if amount > self.balance:
+        if amount > self.balance: # withdrawl amount
             print(f"insuffcient balance")
         else: 
             self.balance -= amount
@@ -45,7 +45,7 @@ class bankaccount:
         self.balance -= fee
         print(f"fees is {fee} applied")
 
-    def display(self):
+    def display(self): # show the result
         print(f"Account number : {self.accountnumber}")
         print(f"Name : {self.name}")
         print(f"balance : {self.balance}")
