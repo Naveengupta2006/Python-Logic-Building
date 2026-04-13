@@ -6,7 +6,7 @@ class Fraction:
           self.den = y
 
     def __str__(self):  # automatic excute the str code.
-        return '{}/{}'.format(self.num, self.den) # use the formating string to show the exact fromat.
+        return '{}/{}'.format(self.num, self.den) # use the formating string to show the exact format.
     
     def __add__(self, other): # this method work only for addition to fraction.
         new_num = self.num*other.den + other.num*self.den
@@ -30,9 +30,9 @@ class Fraction:
         new_num = self.num*other.den
         new_den = self.den*other.num
 
-        return '{}/{}'.format(new_num, new_den)
+        return '{}/{}'.format(new_num, new_den) 
 
-    def convert_to_deciaml(self):
+    def convert_to_deciaml(self): # convert the fraction to decimal number .
         return self.num/self.den    
          
          
