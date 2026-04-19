@@ -51,6 +51,8 @@ class line:
     
     def shortest_distance(line, point):
         return abs(line.A*point.x_cod + line.B*point.y_cod + line.C)/(line.A**2 + line.B**2)**0.5
+    
+    # Two line object insect or not 
 
     
     
