@@ -33,7 +33,7 @@ class Fraction:
         return '{}/{}'.format(new_num, new_den) 
 
     def convert_to_deciaml(self): # convert the fraction to decimal number .
-        return self.num/self.den    
+        return self.num/self.den 
          
          
 fr1 = Fraction(3,4)
@@ -45,3 +45,4 @@ print(fr1 * fr2)
 print(fr1 / fr2)'''
 
 print(fr1.convert_to_deciaml())
+print(fr2.convert_to_deciaml())
