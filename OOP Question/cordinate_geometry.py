@@ -46,6 +46,11 @@ class line:
             return "lies on the line"
         else:
             return "does not lie on the line"
+        
+    # A user can find the distance between a given 2D point and a given line.
+    
+    def shortest_distance(line, point):
+        return abs(line.A*point.x_cod + line.B*point.y_cod + line.C)/(line.A**2 + line.B**2)**0.5
 
     
     
@@ -58,4 +63,4 @@ p1 = point(1,1)
 print(l1)
 print(p1)
 
-print(l1.point_on_line(p1))
+print(l1.shortest_distance(p1))
