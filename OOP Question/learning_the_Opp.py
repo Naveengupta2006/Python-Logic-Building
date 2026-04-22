@@ -3,8 +3,17 @@ class Atm:
     # construtor it is a special function -> superpower
     def __init__(self):  # this is the construtor
         self.pin = ''
-        self.balance = 0
+        self.__balance = 0
         self.menu()
+
+    def get_balance(self):
+        return self.__balance 
+
+    def set_balance(self, new_value):
+        if type(new_value) == int:
+            self.__balance = new_value
+        else:
+            print('beta bahut marenge')    
 
     def menu(self):
         user_input = input("""
@@ -39,7 +48,7 @@ class Atm:
         self.pin = user_pin
 
         user_balance = int(input('enter balance'))
-        self.balance = user_balance
+        self.__balance = user_balance
 
         print('pin created successfully')
         self.menu()
@@ -60,7 +69,7 @@ class Atm:
     def check_balance(self):
         user_pin = input('enter your pin')
         if user_pin == self.pin:
-            print('Your balance is', self.balance)
+            print('Your balance is', self.__balance)
         else:
             print('get lost')
 
@@ -69,8 +78,8 @@ class Atm:
         if user_pin == self.pin:
             # allow to withdraw money
             amount = int(input('enter the amount'))
-            if amount <= self.balance:
-                self.balance = self.balance - amount
+            if amount <= self.__balance:
+                self.__balance = self.__balance - amount
                 print('withdrawl successfully.balance is', self.balance)
             else:
                 print('abe garib')    
@@ -79,3 +88,6 @@ class Atm:
         self.menu()
 
 obj = Atm() # create the object  
+print(obj.set_balance(1000))
+print(obj.get_balance())
+
