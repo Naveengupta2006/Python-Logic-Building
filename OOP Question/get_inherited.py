@@ -1,4 +1,4 @@
-# constructor example 1
+# constructor example 
 
 class phone: # this is parent
     def __init__(self, price, brand, camera):
