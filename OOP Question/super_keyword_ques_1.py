@@ -1,14 +1,14 @@
 class parent:
 
-    def __init__(self,num):
+    def __init__(self,num):    # this class print the 100
         self.__num=num
 
     def get_num(self):
         return self.__num
 
 class child(parent):
-    
-    def __init__(self,num, val):
+
+    def __init__(self,num, val):  # and, this class print the 200.
         super().__init__(num)
         self.__val=val
 
