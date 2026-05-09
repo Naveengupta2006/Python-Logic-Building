@@ -7,7 +7,7 @@ class parent:
 
 class child(parent):
     def __init__(self):
-        super().__var()
+        super().__init__()
         self.__var=10
 
     def show(self):
