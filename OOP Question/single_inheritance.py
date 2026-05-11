@@ -11,4 +11,4 @@ class phone:
 class smartphone(phone):
     pass
 
-smartphone(1000,"apple","13px").buy()
+smartphone(1000,"apple","13px").buy
