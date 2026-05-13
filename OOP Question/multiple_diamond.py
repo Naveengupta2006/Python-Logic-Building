@@ -9,14 +9,14 @@ class phone: # parent 1
         print("Buying a phone")
 
 class product: # parent 2
-    def review(self):
-        print('Customer review')
+    def buy(self):
+        print("product buy method")
 
-class smartphone(phone, product): # child
+class smartphone(product, phone): # child
     pass
 
 s = smartphone(20000,"apple", 12)
 
 s.buy()
-s.review()
+
 
