@@ -12,7 +12,7 @@ class product: # parent 2
     def buy(self):
         print("product buy method")
 
-class smartphone(product, phone): # child
+class smartphone(product, phone): # child #  
     pass
 
 s = smartphone(20000,"apple", 12)
