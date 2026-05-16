@@ -8,7 +8,7 @@ class shape:
         else:
             return a*b 
 
-s = shape() 
+s = shape() # create the s object 
 
 print(s.area(2))
 print(s.area(3,4))
