@@ -14,7 +14,7 @@ class bankapp(ABC):
 
 class mobileapp(bankapp):
 
-    def mobile_login(self):
+    def financial_security(self):
         print('login into mobile')
 
     def security(self):
