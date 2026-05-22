@@ -23,25 +23,23 @@ The area of rectangle is:  12
 
 
 # write the code .
-
 class rectangle:
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
 
-    def perimeter(self):
-        return 2 * (self.length + self.width) # why happend is + used because python 2 * (3,4) is read a tuple . you need + the add the value before multiply.
+    def __init__(self, lenght, width): # this is construtor
+        self.lenght = lenght # attributes
+        self.width = width # attributes
 
-    def area(self):
-        return self.length * self.width # this formula calculate the area of rectangle
+    def perimeter(self): #   method 
+        return 2 * (self.lenght + self.width)
     
-
+    def area(self): # method
+        return self.lenght * self.width
+    
     def display(self):
-        print(f"length: {self.length}")
-        print(f"width : {self.width}")
-        print(f"perimeter: {self.perimeter()}")
-        print(f"area: {self.area()}")
+        print(f"Lenght:",self.lenght)
+        print(f"Width: ",self.width)
+        print(f"perimeter: ", self.perimeter())
+        print(f"area: ",self.area())
 
-# instaitation
-my_rectangle = rectangle(3,4)
+my_rectangle = rectangle(3 ,4)
 my_rectangle.display()
