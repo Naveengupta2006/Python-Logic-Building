@@ -43,16 +43,16 @@ class instructor:
     # getter
 
     def get_name(self):
-        self.__name
+        return self.__name
 
     def get_technology_skill(self):
-        self.__technology_skill
+        return self.__technology_skill
 
     def get_experience(self):
-        self.__experience
+        return self.__experience
     
     def get_avg_feedback(self):
-        self.__avg_feedback
+        return self.__avg_feedback
 
     
     # method 1:
@@ -96,19 +96,21 @@ def test_allocation(instructor, course):
 
 sep = "=" * 45
 
-# ── Instructor 1 
 
-i1 = instructor()
-i1.set_name("Alice")
-i1.set_technology_skill(["Python", "Machine Learning", "SQL"])
-i1.set_experience(5)
-i1.set_avg_feedback(4.7)
+if __name__ == "__main__":
+    # ── Instructor 1
+    i1 = instructor()
+    i1.set_name("Alice")
+    i1.set_technology_skill(["Python", "Machine Learning", "SQL"])
+    i1.set_experience(5)
+    i1.set_avg_feedback(4.7)
 
-print(sep)
-print("  INSTRUCTOR 1")
-print(sep)
-i1.display()
-print()
-test_allocation(i1, "Python")
-test_allocation(i1, "Java")         # skill missing
-print()
+    print(sep)
+    print("  INSTRUCTOR 1")
+    print(sep)
+    i1.display()
+    print()
+    test_allocation(i1, "Python")
+    test_allocation(i1, "Java")         # skill missing
+    print()
+
