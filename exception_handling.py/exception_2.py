@@ -23,3 +23,12 @@ try:
 except FileNotFoundError:
     print('some error occured')
 
+# else
+try:
+    f = open('sample.txt','r')
+except FileNotFoundError:
+    print('File not found')
+except Exception :
+    print('kuch to lafda hai ')
+else:
+    print(f.read())
